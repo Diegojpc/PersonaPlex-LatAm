@@ -4,6 +4,10 @@ import logging
 from pathlib import Path
 import sentencepiece as spm
 from huggingface_hub import hf_hub_download
+from dotenv import load_dotenv
+
+# Load env vars from .env file
+load_dotenv()
 
 def setup_rigorous_logger(name: str, log_file: str) -> logging.Logger:
     logger = logging.getLogger(name)

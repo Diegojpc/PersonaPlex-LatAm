@@ -7,6 +7,10 @@ import traceback
 import subprocess
 from pathlib import Path
 from typing import Dict, Any, Optional
+from dotenv import load_dotenv
+
+# Load env vars from .env file
+load_dotenv()
 
 def setup_rigorous_logger(name: str) -> logging.Logger:
     logger = logging.getLogger(name)
