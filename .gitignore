@@ -186,3 +186,7 @@ mlx-trace.json
 # Include everything in assets
 !assets/
 !assets/**
+.git_recover/
+home_mock/
+latam_experiments/implementation_plan.md
+latam_experiments/task.md
